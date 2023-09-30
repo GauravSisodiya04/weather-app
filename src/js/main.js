@@ -1,10 +1,9 @@
-const API_KEY = "c07ac510ef0452db61a33b3cebaeecd0";
 const endpoint = "https://api.openweathermap.org/data/3.0/onecall?";
 const latitude = 20.8307;
 const longitude = 76.4505;
 
 window.onload = () => {
-    const getWeatherData = async function(){
+    const getWeatherData =  async function(){
         const result = {};
         const generateEndpointWithParameters = endpoint+"lat="+latitude+"&lon="+longitude+"&appid="+API_KEY;
         console.log("My API URL becomes -->", generateEndpointWithParameters);
